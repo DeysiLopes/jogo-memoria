@@ -1,6 +1,9 @@
-import './style.css'
+import cardGame from './src/components/cardGame';
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const $root = document.querySelector('#root');
+const $htmlCardGame = cardGame();
+
+console.log($htmlCardGame);
+
+$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+
