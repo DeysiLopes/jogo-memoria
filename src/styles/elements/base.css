@@ -1,0 +1,5 @@
+body{
+    background-color: var(--color-pomb-and-power);
+    justify-content: center;
+    align-items: center;
+}
