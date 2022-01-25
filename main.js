@@ -6,7 +6,7 @@ import boardGames from './src/objects/boardGames/index';
 
 
 const $root = document.querySelector('#root');
-const $htmlBoardGame = boardGames(3);
+const $htmlBoardGame = boardGames(6);
 
 //console.log($htmlBoardGame);
 
