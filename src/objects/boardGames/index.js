@@ -1,9 +1,9 @@
 import './style.css'
-import cardGame from "../../components/cardGame/index";
+import cardFrontBack from '../../components/CardFontBack';
 
 function boardGame(amountCards){
-    const $htmlCardGame = cardGame();
-    const $htmlContent = $htmlCardGame.repeat(amountCards)
+    const $htmlCardFrontBack = cardFrontBack();
+    const $htmlContent = $htmlCardFrontBack.repeat(amountCards)
 
     return /*html*/`
         <section class="board-game">

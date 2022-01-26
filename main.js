@@ -1,8 +1,8 @@
 import './src/styles/settings/colors.css'
 import './src/styles/generics/reset.css'
-import './src/styles/elements/base.css'
-import boardGames from './src/objects/boardGames/index';
+import './src/styles/elements/base.css' 
 import scoreBoard from './src/objects/ScoreBoard';
+import boardGame from './src/objects/boardGames';
 
 
 
@@ -14,7 +14,7 @@ $root.insertAdjacentHTML(
     "beforeend",
     `
         ${scoreBoard()}    
-        ${boardGames(6)}
+        ${boardGame(2)}
     `
 );
 
