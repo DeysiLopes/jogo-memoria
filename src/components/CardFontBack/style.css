@@ -1,0 +1,29 @@
+.card-front-back{
+    /* classe pai */
+    --width: 130px;
+    --height: 160px;
+    width: var(--width);
+    height: var(--height);
+    position: relative; /* deixa a posição relativa*/
+    transform-style: preserve-3d; /* para ter a sensação de 3D no 2D*/
+    transition: transform 1s cubic-bezier(.42,0,.57,1.68);/* Faz a transição do transform de forma animada, qtd de tempo, vai mais devagar no inicio/fim */
+}
+
+.card-front-back.-active {
+    transform: rotateY(180deg); /* rotaciona 180 graus quando ativado*/
+}
+
+.card-front-back > .card {
+    /* classe filho */
+    position: absolute; /* deixa a posição do filhos absolutas*/
+    backface-visibility: hidden; /* deixa o cartão filho escodindo do usuário*/
+}
+
+.card-front-back > .card.-back{
+    transform: rotateY(180deg); /* rotaciona o cartao back para a frente*/
+}
+
+.card-front-back > .card.-back > .card-game {
+    background-color:  var(--color-fiery-rose);
+}
+ 
