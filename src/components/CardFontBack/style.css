@@ -7,6 +7,7 @@
     position: relative; /* deixa a posição relativa*/
     transform-style: preserve-3d; /* para ter a sensação de 3D no 2D*/
     transition: transform 1s cubic-bezier(.42,0,.57,1.68);/* Faz a transição do transform de forma animada, qtd de tempo, vai mais devagar no inicio/fim */
+    cursor: pointer;/*faz aparecer a mãozinha indicando que pode clicar*/
 }
 
 .card-front-back.-active {
