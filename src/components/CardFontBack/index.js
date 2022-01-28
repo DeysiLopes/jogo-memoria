@@ -5,11 +5,11 @@ import './style.css'
 
 
 function cardFrontBack(){
-    window.CardFrontBack = {} //precisa setar um namespace senão irá sobescrever sempre o handleClick no escopo global
+    window.CardFrontBack = {} //precisa setar um namespace senão irá sobrescrever sempre o handleClick no escopo global
     window.CardFrontBack.handleClick = (event) => {
         const $origin = event.target;//target é a origem do click
         const $cardFrontBack = $origin.closest('.card-front-back');//pega com o seletor que no caso é a classe mais proxima do evento => onclick 
-        // poderia ser usado o parentNode que procura de forma manual o pai que tem a minha animção 
+        // poderia ser usado o parentNode que procura de forma manual o pai que tem a minha animação 
         
         // if($cardFrontBack.classList.contains('-active')){
         //     $cardFrontBack.classList.remove('-active');
@@ -20,7 +20,7 @@ function cardFrontBack(){
         $cardFrontBack.classList.toggle('-active')
         //adiciona a animação que foi feita em css que está na classe -active
     }
- // handleClick() é uma string da função que será executado no futuro, que está no escopo golbal por causa do window namespace
+ // handleClick() é uma string da função que será executado no futuro, que está no escopo global por causa do window namespace
     return /*html*/ `
         <article class="card-front-back"  onclick="CardFrontBack.handleClick(event)"> 
             <div class="card -front">
