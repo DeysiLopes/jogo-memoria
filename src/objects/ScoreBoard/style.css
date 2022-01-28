@@ -1,6 +1,7 @@
 .score-board {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex;/*seta a posição por default na horizontal*/
+    justify-content: space-evenly;/*usado para separar os elementos essa propriedade transversal*/
+    align-items: center;/*alinha os itens no eixo principal que no caso é o horizontal*/
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
