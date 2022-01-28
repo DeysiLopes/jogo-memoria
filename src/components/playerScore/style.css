@@ -16,16 +16,18 @@
     width: 33%;
 }
 
+/*pega a variável que foi setada na classe play-score e quando valor 1 vai pegar a classe pointer e setar como o primeiro filho*/
 .player-score[data-points = "1"] > .pointer:first-child{
-    background-color: var(--color-maints);
+    background-color: var(--color-maints); /*colore a primeira caixa*/
 }
 .player-score[data-points = "2"]{
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;/* seta que a ordem tem que ser inversa*/
 }
-
+/*pegar o valor pointer n+2 e colore*/
 .player-score[data-points = "2"] > .pointer:nth-child(n+2){
     background-color: var(--color-maints);
 }
+/* colore tudo*/
 .player-score[data-points = "3"] > .pointer{
     background-color: var(--color-maints);
 }
