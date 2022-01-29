@@ -4,7 +4,7 @@ import './style.css'
 
 
 
-function cardFrontBack(){
+function cardFrontBack(icon, altIcon){
     window.CardFrontBack = {} //precisa setar um namespace senão irá sobrescrever sempre o handleClick no escopo global
     window.CardFrontBack.handleClick = (event) => {
         const $origin = event.target;//target é a origem do click
@@ -27,7 +27,7 @@ function cardFrontBack(){
                 ${cardGame()}
             </div>
             <div class="card -back">
-                ${cardGame("charmander", "Charmander")}
+                ${cardGame(icon, altIcon)}
             </div>
            
             
